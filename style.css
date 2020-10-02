@@ -18,7 +18,6 @@ ul{
 }
 li{
     margin: 0px;
-    
 }
 a{
     text-decoration: none;
@@ -46,13 +45,21 @@ h2{
 h3{
     padding-top: 30px;
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
     margin-bottom: 10px;
+}
+h4{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+
 }
 section{
     justify-content: center;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 400px;
+    padding-right: 400px;
+    margin-bottom: 30px;
 }
 section > div{
     background-color: rgb(207, 206, 206);
@@ -67,11 +74,191 @@ figure{
     flex-direction: column;
 }
 img{
-    height: 200px;
-    width: auto;
+    width: 200px;
+    height: auto;
 }
 main > div{
-    
     margin-left: 200px;
     margin-right: 200px;
+}
+article > p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+
+}
+.row > div{
+    background-color: rgb(222, 222, 222);
+    margin: 20px;
+}
+.row p{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+ol{
+    visibility: hidden;
+}
+#third{
+    margin-right: 0;
+}
+#first{
+    margin-left: 0;
+}
+abbr{
+    font-style: italic;
+    color: rgb(228, 119, 119);
+}
+footer li {
+    font-size: 20px;
+}
+
+@media all and (max-width: 1700px) {
+    .row{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    main > div{
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    section{
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    ul{
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+@media all and (max-width: 1024px){
+    hr{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    h3{
+       font-size: 20px;
+        margin-bottom: 5px;
+    }
+    h4{
+        padding-top: 20px;
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+    ol{
+        visibility: visible;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .row > div{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+@media all and (max-width: 850px){
+    article{
+        display: flex;
+        flex-direction: column;
+    }
+    figure{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    article{
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    ol>li{
+        font-size: 15px;
+    }
+    ol>li>a{
+        font-size: 15px;
+    }
+    img{
+        width: 150px;
+        height: auto;
+    }
+    section{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    ul{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .row{
+        margin: auto;
+    }
+}
+@media all and (max-width: 650px){
+    main > div{
+    
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+@media all and (max-width: 550px){
+   
+ 
+    section{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    hr{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    ul{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    footer li {
+        font-size: 15px;
+    }
+     a{
+        font-size: 15px;
+    }
+    h4{
+        padding-top: 5px;
+    }
+}
+@media all and (max-width: 350px){
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    h3{
+       font-size: 18px;
+        margin-bottom: 5px;
+    }
+    h4{
+        padding-top: 20px;
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+}
+
+@media print {
+    body{
+        width: 100%;
+    }
+    main>div{
+        break-inside:avoid; 
+    }
 }
