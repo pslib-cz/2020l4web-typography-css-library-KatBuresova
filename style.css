@@ -16,6 +16,14 @@ nav>ul{
     padding-left: 100px;
     padding-right: 100px;
 }
+footer>ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+}
 li{
     margin: 0px;
 }
